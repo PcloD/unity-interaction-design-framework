@@ -1,12 +1,12 @@
 # Unity Interaction Design Framework
 *A robust, extensible, generic, and versatile interaction design framework for building complex puzzle systems.*
 
-**Status:** In active development
+**Status:** Planning
 
 **Version:** 0.0.1
 
 ## Introducing UnityEngine.Interaction for content creators and level designers!
-UnityEngine.Interaction offers a whole new suite of tools for designing systems of interaction that allow content creators and level designs to easily and quickly build complex challenges and puzzles for their games. The framework can be applied to any game genre and customized to cater to the unique design needs of any game.
+UnityEngine.Interaction offers a whole new suite of tools for designing systems of interaction that allow content creators and level designers to easily and quickly build complex challenges and puzzles for their games. The framework can be applied to any game genre and customized to cater to the unique design goals of any game.
 
 ## Overview
 The technical design of this framework draws inspiration from computer organization and digital logic. The framework uses [directed graphs](https://en.wikipedia.org/wiki/Directed_graph) to represent puzzles (hereinafter referred to as interaction systems). The nodes that make up these graphs refer to the puzzle pieces (hereinafter reffered to as interaction components) of that interaction system. So puzzle piece is to puzzle as interaction component is to interaction system.
@@ -41,35 +41,35 @@ Definitions contain rules for outputing 1. Any input that doesn't meet these can
 
 ### Buttons
 * **Click Button:** Outputs 1 when player clicks on the trigger zone using the mouse.
-* **Hold Button:** Outputs 1 when player holds \<key code> for \<duration> while in the button zone.
-* **Mash Button:** Outputs 1 when player maintains \<clicks per seconds> and for \<duration> while in the button zone.
-* **Push Button:** Outputs 1 when player presses \<key code> while in the button zone.
+* **Hold Button:** Outputs 1 when player holds **`<key code>`** for **`<duration>`** while in button zone.
+* **Mash Button:** Outputs 1 when player mashes **`<clicks/sec>`** and for **`<duration>`** while in button zone.
+* **Push Button:** Outputs 1 when player presses **`<key code>`** while in button zone.
 
 ### Switches
-* **Click Switch:** test
-* **Hold Switch:** test
-* **Mash Switch:** test
-* **Flick Switch:** test
-* **Sensor Switch:** test
+* **Click Switch:** Changes/outputs state when player clicks on the trigger zone using the mouse.
+* **Hold Switch:** Changes/outputs state when player **`<key code>`** for **`<duration>`** while in switch zone. 
+* **Mash Switch:** Changes/outputs state when player mashes **`<clicks/sec>`** and for **`<duration>`** while in switch zone.
+* **Flick Switch:** Changes/outputs state when player presses **`<key code>`** while in the switch zone.
+* **Sensor Switch:** Changes/outputs state when **`<target>`** enters the switch zone.
 
 ### Sensors
-* **Stateless Sensor:** test
-* **Stateful Sensor:** test
+* **Stateless Sensor:** Outputs 1 when **`<target>`** enters the switch zone.
+* **Stateful Sensor:** Outputs 1 when **`<target>`** enters the switch zone and 0 when they exit.
 
 ### Selectors
-* **Selector:** test
-* **Weighted Selector:** test
-* **Bistate Selector:** test
-* **Quadstate Selector:** test
-* **Octostate Selector:** test
+* **Selector:** Outputs 1 to **`<amount to select>`** randomly selected outputs when receives a 1 input.
+* **Weighted Selector:** Outputs 1 to **`<amount to select>`** weight selected outputs when receives a 1 input.
+* **Bistate Selector:** Outputs 1 to 1 of 2 outputs based off of 1 input and the decimal equivalent of the input.
+* **Quadstate Selector:** Outputs 1 to 1 of 4 outputs based off of 2 inputs and the decimal equivalent of the inputs.
+* **Octostate Selector:** Outputs 1 to 1 of 8 outputs based off of 3 inputs and the decimal equivalent of the inputs.
 
 ### Sequencer
-* **Sequencer:** test
-* **Chance Sequencer:** test
-* **Random Sequencer:** test
+* **Sequencer:** Outputs 1 for a sequentially selected output for each input 1 received.
+* **Chance Sequencer:** Has a chance to output 1 for a sequentially selected output for each input 1 received.
+* **Random Sequencer:** Outputs 1 for a randomly selected, but non-re-selectable output for each input 1 received.
 
 ### Misc
-* **Distance Checker:** test:
-* **Counter:** test
-* **Timer:** test
-* **Metronome:** test
+* **Distance Checker:** Outputs 1 if **`<target>`** is **`<comparison>`** **`<distance>`** from **`<other target>`** when receives a 1 input.
+* **Counter:** Outputs 1 if **`<count>`** equals **`<target count>`**. Receiving a 1 input increments **`<count>`** while a 0 resets it to 0.
+* **Timer:** Outputs 1 after **`<duration>`** has passed after receiving a 1 input. Stops and resets upon receiving a 0 input.
+* **Metronome:** Outputs 1 every **`<interval duration>`** after receiving a 1 input. Stops when receiving a 0 input.
