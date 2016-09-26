@@ -41,16 +41,16 @@ Definitions contain rules for outputing 1. Any input that doesn't meet these can
 
 ### Buttons
 * **Click Button:** Outputs 1 when player clicks on the trigger zone using the mouse.
-* **Hold Button:** Outputs 1 when player holds **`<key code>`** for **`<duration>`** while in button zone.
-* **Mash Button:** Outputs 1 when player mashes **`<clicks/sec>`** and for **`<duration>`** while in button zone.
-* **Push Button:** Outputs 1 when player presses **`<key code>`** while in button zone.
+* **Hold Button:** Outputs 1 when player holds **`<key code>`** for **`<duration>`** while in trigger zone.
+* **Mash Button:** Outputs 1 when player mashes **`<clicks/sec>`** and for **`<duration>`** while in trigger zone.
+* **Push Button:** Outputs 1 when player presses **`<key code>`** while in trigger zone.
 
 ### Switches
 * **Click Switch:** Changes/outputs state when player clicks on the trigger zone using the mouse.
-* **Hold Switch:** Changes/outputs state when player **`<key code>`** for **`<duration>`** while in switch zone. 
-* **Mash Switch:** Changes/outputs state when player mashes **`<clicks/sec>`** and for **`<duration>`** while in switch zone.
-* **Flick Switch:** Changes/outputs state when player presses **`<key code>`** while in the switch zone.
-* **Sensor Switch:** Changes/outputs state when **`<target>`** enters the switch zone.
+* **Hold Switch:** Changes/outputs state when player **`<key code>`** for **`<duration>`** while in trigger zone. 
+* **Mash Switch:** Changes/outputs state when player mashes **`<clicks/sec>`** and for **`<duration>`** while in trigger zone.
+* **Flick Switch:** Changes/outputs state when player presses **`<key code>`** while in the trigger zone.
+* **Sensor Switch:** Changes/outputs state when **`<target>`** enters the trigger zone.
 
 ### Sensors
 * **Stateless Sensor:** Outputs 1 when **`<target>`** enters the switch zone.
