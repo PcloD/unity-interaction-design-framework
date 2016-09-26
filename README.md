@@ -5,6 +5,9 @@
 
 **Version:** 0.0.1
 
+## Quick Introductory Video
+I encourage you to view this brief **[5-minute YouTube video](https://www.youtube.com/channel/UCkxtr--pUXOrsC4jbMNa3QA)**. In the video, I explain the project's objectives, the current rudimentary design, the implementation plans, and each component listed below.
+
 ## Introducing UnityEngine.Interaction for content creators and level designers!
 UnityEngine.Interaction offers a whole new suite of tools for designing systems of interaction that allow content creators and level designers to easily and quickly build complex challenges and puzzles for their games. The framework can be applied to any game genre and customized to cater to the unique design goals of any game.
 
@@ -13,9 +16,6 @@ The technical design of this framework draws inspiration from computer organizat
 
 ## Update 9/26/2016
 I completed the first draft of the list of components I believe v1.0 should contain. Please feel free to provide any feedback regarding the organization, naming, and/or grouping of these components. I welcome any ideas for adding, removing, and/or modifying any components. I provide an overview the current rudimentary design for the framework. I welcome any feedback regarding that as well. On a quick side note, I hope to eventually integrate this with the open source [Baste-Rain Games' Node Editor](https://github.com/Baste-RainGames/Node_Editor) project down the road in order to make this tool more usable for content creators and game designers.
-
-## Want to know more?
-I encourage you to view this brief **[5-minute YouTube video](https://www.youtube.com/channel/UCkxtr--pUXOrsC4jbMNa3QA)**. In the video, I explain the project's objectives, the current rudimentary design, the implementation plans, and each component listed below.
 
 ## Terminology
 * **Interaction Object:** A simple building block to build more complex building blocks.
