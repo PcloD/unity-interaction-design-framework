@@ -54,7 +54,7 @@ Definitions contain rules for outputing 1. Any input that doesn't meet these can
 
 ### Sensors
 * **Stateless Sensor:** Outputs 1 when **`<target>`** enters the switch zone.
-* **Stateful Sensor:** Outputs 1 when **`<target>`** enters the switch zone and 0 when they exit.
+* **Stateful Sensor:** Outputs 1 when **`<target>`** enters the switch zone and 0 when it exits.
 
 ### Selectors
 * **Selector:** Outputs 1 to **`<amount to select>`** randomly selected outputs when receives a 1 input.
